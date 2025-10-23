@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sandeep ❤️ Jyothsna — A Celebration of Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#F2E6D6;         /* beige */
+      --panel:#F8EFE3;      /* light beige */
+      --text:#3B2F22;       /* deep brown */
+      --muted:#726554;      
+      --gold:#D4AF37;       /* soft gold */
+      --gold-2:#f1d473;     /* lighter gold for shimmer */
+      --radius:18px;
+      --shadow:0 6px 20px rgba(0,0,0,.06);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
+
+    /* Floating hearts/petals (festive but subtle) */
+    .floaters{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+    .floater{position:absolute;bottom:-10vh;font-size:18px;opacity:.0;animation:rise 12s linear infinite}
+    .floater:nth-child(odd){animation-duration:14s}
+    .floater:nth-child(3n){font-size:22px}
+    @keyframes rise{
+      0%{transform:translateY(0) translateX(0) rotate(0deg);opacity:0}
+      10%{opacity:.6}
+      60%{opacity:.6}
+      100%{transform:translateY(-120vh) translateX(20px) rotate(360deg);opacity:0}
+    }
+
+    .wrap{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:24px 16px 64px}
+    header{text-align:center;margin-bottom:24px}
+    .title{font-family:'Playfair Display',serif;font-size:36px;font-weight:700;margin:0;letter-spacing:.2px}
+    .heart{color:#b43b3b}
+    .subtitle{font-family:'Playfair Display',serif;font-size:21px;font-weight:600;margin-top:8px}
+    .tagline{font-size:15px;color:var(--muted);margin-top:4px}
+
+    .card{background:var(--panel);border-radius:24px;padding:16px 20px;box-shadow:var(--shadow)}
+    .item{display:grid;grid-template-columns:1fr auto;align-items:center;gap:10px;padding:16px 0;border-bottom:1px solid rgba(0,0,0,.06)}
+    .item:last-child{border-bottom:none}
+    .h{font-family:'Playfair Display',serif;font-size:19px;font-weight:600;margin:0;line-height:1.35}
+    .p{font-size:14px;color:var(--muted);margin:4px 0 0}
+
+    /* Gold shimmer button */
+    .btn,.pill{display:inline-block;text-decoration:none;border-radius:999px;padding:10px 18px;font-size:13px;font-weight:700;transition:transform .18s ease, box-shadow .18s ease}
+    .btn{background:linear-gradient(90deg,var(--gold),var(--gold-2),var(--gold));background-size:200% 100%;color:#3b2f22;box-shadow:0 3px 10px rgba(0,0,0,.1);animation:shimmer 4s linear infinite}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(0,0,0,.14)}
+    @keyframes shimmer{0%{background-position:0% 0}100%{background-position:200% 0}}
+
+    .pill{background:#d9c79a;color:#3b2f22}
+
+    footer{text-align:center;margin-top:32px;font-family:'Playfair Display',serif;font-size:15px;color:var(--muted)}
+
+    /* Scroll-reveal animations */
+    .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease, transform .6s ease}
+    .reveal.in{opacity:1;transform:translateY(0)}
+
+    @media (max-width:700px){
+      .item{grid-template-columns:1fr;gap:6px}
+      .btn,.pill{justify-self:center}
+      .title{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+  <!-- subtle floating decorations -->
+  <div class="floaters" aria-hidden="true">
+    <div class="floater" style="left:5%; animation-delay:0s">💞</div>
+    <div class="floater" style="left:20%; animation-delay:2s">💖</div>
+    <div class="floater" style="left:40%; animation-delay:4s">🌸</div>
+    <div class="floater" style="left:60%; animation-delay:1s">💝</div>
+    <div class="floater" style="left:80%; animation-delay:3s">💐</div>
+  </div>
+
+  <div class="wrap">
+    <header class="reveal">
+      <h1 class="title">Sandeep <span class="heart">❤️</span> Jyothsna</h1>
+      <div class="subtitle">A Celebration of Love</div>
+      <div class="tagline">Relive every magical moment in 4K</div>
+    </header>
+
+    <section class="card reveal" aria-label="Wedding Films">
+      <div class="item reveal"><div><div class="h">Our Big Day Awaits | Sandeep <span class="heart">❤️</span> Jyothsna | Save the Date 4K</div><div class="p">The beginning of our forever — mark the date of love, laughter, and joy.</div></div><a class="btn" href="https://youtu.be/CvAyYsXej7E" target="_blank" rel="noopener">Watch Now</a></div>
+
+      <div class="item reveal"><div><div class="h">Let the Yellow Magic Begin | Sandeep <span class="heart">❤️</span> Jyothsna’s Haldi Bash 4K</div><div class="p">A vibrant pre-wedding ritual filled with laughter, love, and bright yellow hues.</div></div><a class="btn" href="https://youtu.be/hMki_vkny0k" target="_blank" rel="noopener">Watch Now</a></div>
+
+      <div class="item reveal"><div><div class="h">Stories in Henna | Sandeep <span class="heart">❤️</span> Jyothsna | The Mehendi Chapter 4K</div><div class="p">An intimate celebration of art and tradition, adorned with intricate henna designs.</div></div><a class="btn" href="https://youtu.be/_0sH-b5TcEc" target="_blank" rel="noopener">Watch Now</a></div>
+
+      <div class="item reveal"><div><div class="h">When Love Meets Beats | Sandeep <span class="heart">❤️</span> Jyothsna’s Magical Sangeeth Night 4K</div><div class="p">A night of music, dance, and joyous celebration.</div></div><a class="btn" href="https://youtu.be/lloeZSqtQAQ" target="_blank" rel="noopener">Watch Now</a></div>
+
+      <div class="item reveal"><div><div class="h">A Cinematic Love Story | Sandeep <span class="heart">❤️</span> Jyothsna’s Pre-Wedding Shoot 4K</div><div class="p">A beautiful journey captured in stunning visuals.</div></div><a class="btn" href="https://youtu.be/_fpVmIwZ6zU" target="_blank" rel="noopener">Watch Now</a></div>
+
+      <div class="item reveal"><div><div class="h">Two Hearts, One Promise | Sandeep <span class="heart">❤️</span> Jyothsna’s Engagement Day 4K</div><div class="p">The day we decided to spend our lives together.</div></div><span class="pill" aria-disabled="true">Coming Soon</span></div>
+
+      <div class="item reveal"><div><div class="h">Happily Ever After Begins | Sandeep <span class="heart">❤️</span> Jyothsna’s Wedding Moments 4K</div><div class="p">A glimpse into our forever.</div></div><span class="pill" aria-disabled="true">Coming Soon</span></div>
+    </section>
+
+    <footer class="reveal">Thank you for being part of our story.</footer>
+  </div>
+
+  <script>
+    // Simple scroll-reveal using IntersectionObserver
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{threshold:0.15});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  </script>
+</body>
+</html>
